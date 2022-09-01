@@ -1,0 +1,150 @@
+using System;
+using System.Collections.Generic;
+using System.Data;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp2
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int i = 1;
+            do
+            {
+
+                int acerto = 0;
+                int erro = 0;
+
+                string perg1;
+                string perg2;
+                string perg3;
+                string perg4;
+                string perg5;
+                string nao;
+                
+
+                Console.WriteLine("                            ------ Bem Vindo ao Star Wars Quiz! ------");
+                Console.WriteLine();
+                Console.WriteLine("                                     ------ Boa Sorte! ------");
+                Console.WriteLine();
+                Console.WriteLine("Responda as Perguntas utilizando: a, b ou c.");
+                Console.WriteLine();
+                Console.WriteLine("Pressione qualquer tecla para continuar ou 'n' para sair.");
+                nao = Console.ReadLine();
+                if (nao == "n")
+                {
+                    Environment.Exit(1);
+                }
+
+                Console.WriteLine();
+                Console.WriteLine();
+
+
+                Console.WriteLine("Qual o nome Imperador da Republica?");
+                Console.WriteLine();
+                Console.WriteLine("(a): Darth Vader");
+                Console.WriteLine("(b): Palpatine");
+                Console.WriteLine("(c): Valkorion");
+
+                Console.WriteLine();
+
+                perg1 = Console.ReadLine();
+                if (perg1 == "b")
+                {
+                    Console.WriteLine("Você Acertou!");
+                    acerto++;
+                }
+                else
+                {
+                    Console.WriteLine("Você Errou!");
+                    erro++;
+                    
+                }
+                Console.WriteLine("Qual o nome da capital da Republica?");
+                Console.WriteLine();
+                Console.WriteLine("(a) Naboo");
+                Console.WriteLine("(b) Tatooine");
+                Console.WriteLine("(c) Coruscant");
+                perg2 = Console.ReadLine();
+                if (perg2 == "c")
+                {
+                    Console.WriteLine("Você Acertou!");
+                    acerto++;
+                }
+                else
+                {
+                    Console.WriteLine("Você Errou!");
+                    erro++;
+                }
+                Console.WriteLine("Quem pilota a nave Millenium Falcon?");
+                Console.WriteLine();
+                Console.WriteLine("(a) Greedo");
+                Console.WriteLine("(b) Han Solo");
+                Console.WriteLine("(c) Yoda");
+                perg3 = Console.ReadLine();
+                if (perg3 == "b")
+                {
+                        Console.WriteLine("Você Acertou!");
+                        acerto++;
+                }
+                    else
+                    {
+                        Console.WriteLine("Você Errou!");
+                    erro++;
+                    }
+
+                Console.WriteLine("Qual o nome das armas usadas pelos Jedi?");
+                Console.WriteLine();
+                Console.WriteLine("(a) Lightsword");
+                Console.WriteLine("(b) lightspear");
+                Console.WriteLine("(c) Lightsaber");
+                perg4 = Console.ReadLine();
+                if (perg4 == "c")
+                {
+                    Console.WriteLine("Você Acertou!");
+                    acerto++;
+                }
+                else
+                {
+                    Console.WriteLine("Você Errou!");
+                    erro++;
+                }
+                Console.WriteLine("Qual o nome da mãe de Luke Skywalker?");
+                Console.WriteLine();
+                Console.WriteLine("(a) Leia");
+                Console.WriteLine("(b) Padme");
+                Console.WriteLine("(c) Ahsoka");
+                perg5 = Console.ReadLine();
+                if (perg5 == "a")
+                {
+                    Console.WriteLine("Você Acertou!");
+                    acerto++;
+                }
+                else
+                {
+                    Console.WriteLine("Você Errou!");
+                    erro++;
+                }
+                Console.WriteLine();
+                Console.WriteLine("Você chegou ao final do Quiz, Aqui estão os resultados:");
+                Console.WriteLine();
+                Console.WriteLine("Acertos: " + acerto);
+                Console.WriteLine("Erros: " + erro);
+
+                Console.WriteLine();
+                Console.WriteLine("Pressione qualquer tecla para reiniciar ou 'n' para sair.");
+
+                nao = Console.ReadLine();
+                if (nao == "n")
+                {
+                    Environment.Exit(1);
+                }
+               
+            } while (i < 10);
+
+        }
+    }
+}
