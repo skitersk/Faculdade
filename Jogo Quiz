@@ -14,26 +14,28 @@ namespace ConsoleApp2
             int i = 1;
             do
             {
-// Feito por Luan Hammes
-                int acerto = 0;
-                int erro = 0;
+                // Feito por Luan Hammes
+                int acerto = 0; // a int acerto ira mostrar ao jogador um numero inteiro referente a sua pontuação.
+                int erro = 0; // a int erro ira mostrar ao jogador um numero inteiro referente a sua pontuação.
 
-                string perg1;
+                string perg1; // string base de perguntas sendo 5 todas, e seguindo atraves de perg1 a perg5.
                 string perg2;
                 string perg3;
                 string perg4;
                 string perg5;
-                string nao;
-                
+                string nao; // a string 'nao' será usada para encerrar a aplicação.
 
-                Console.WriteLine("                            ------ Bem Vindo ao Star Wars Quiz! ------");
+
+                // micro Hud de entrada para o jogador, contendo informações basicas do jogo.
+
+                Console.WriteLine("                            ------ Bem Vindo ao Star Wars Quiz! ------");  //adicionado espaços para centralização da mensagem inicial.
                 Console.WriteLine();
                 Console.WriteLine("                                     ------ Boa Sorte! ------");
                 Console.WriteLine();
                 Console.WriteLine("Responda as Perguntas utilizando: a, b ou c.");
                 Console.WriteLine();
                 Console.WriteLine("Pressione qualquer tecla para continuar ou 'n' para sair.");
-                nao = Console.ReadLine();
+                nao = Console.ReadLine(); // ao chamar a string 'nao' iremos executar o comando Environment.Exit que irá encerrar a aplicação.
                 if (nao == "n")
                 {
                     Environment.Exit(1);
@@ -51,17 +53,17 @@ namespace ConsoleApp2
 
                 Console.WriteLine();
 
-                perg1 = Console.ReadLine();
-                if (perg1 == "b")
+                perg1 = Console.ReadLine(); // chama a string perg1 representando a primeira pergunta do Quiz.
+                if (perg1 == "b") //utilizado o comando if para o caso do jogador ter acertado a pergunta.
                 {
-                    Console.WriteLine("Você Acertou!");
-                    acerto++;
+                    Console.WriteLine("Você Acertou!"); // resposta base de acerto.
+                    acerto++; // aqui os acertos vão sendo somados para o resultado final
                 }
                 else
                 {
-                    Console.WriteLine("Você Errou!");
-                    erro++;
-                    
+                    Console.WriteLine("Você Errou!"); // resposta base de erro.
+                    erro++; // soma-se os erros ao final
+
                 }
                 Console.WriteLine("Qual o nome da capital da Republica?");
                 Console.WriteLine();
@@ -87,14 +89,14 @@ namespace ConsoleApp2
                 perg3 = Console.ReadLine();
                 if (perg3 == "b")
                 {
-                        Console.WriteLine("Você Acertou!");
-                        acerto++;
+                    Console.WriteLine("Você Acertou!");
+                    acerto++;
                 }
-                    else
-                    {
-                        Console.WriteLine("Você Errou!");
+                else
+                {
+                    Console.WriteLine("Você Errou!");
                     erro++;
-                    }
+                }
 
                 Console.WriteLine("Qual o nome das armas usadas pelos Jedi?");
                 Console.WriteLine();
@@ -134,17 +136,20 @@ namespace ConsoleApp2
                 Console.WriteLine("Acertos: " + acerto);
                 Console.WriteLine("Erros: " + erro);
 
+
+                // ao chegar ao final do Quiz o jogador terá a opção de reiniciar o jogo, ou sair.
                 Console.WriteLine();
                 Console.WriteLine("Pressione qualquer tecla para reiniciar ou 'n' para sair.");
-
+                // caso o jogador desejar sair, ao pressionar a tecla ordenada, o comando Environment.Exit é executado encerrando a aplicação.
                 nao = Console.ReadLine();
                 if (nao == "n")
                 {
                     Environment.Exit(1);
                 }
-               
+
             } while (i < 10);
-// Feito por Luan Hammes
+            // Feito por Luan Hammes
         }
     }
 }
+
