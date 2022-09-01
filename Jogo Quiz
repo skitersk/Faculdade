@@ -14,7 +14,7 @@ namespace ConsoleApp2
             int i = 1;
             do
             {
-                // Feito por Luan Hammes
+                
                 int acerto = 0; // a int acerto ira mostrar ao jogador um numero inteiro referente a sua pontuação.
                 int erro = 0; // a int erro ira mostrar ao jogador um numero inteiro referente a sua pontuação.
 
