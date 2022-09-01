@@ -14,7 +14,7 @@ namespace ConsoleApp2
             int i = 1;
             do
             {
-
+// Feito por Luan Hammes
                 int acerto = 0;
                 int erro = 0;
 
@@ -144,7 +144,7 @@ namespace ConsoleApp2
                 }
                
             } while (i < 10);
-
+// Feito por Luan Hammes
         }
     }
 }
